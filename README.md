@@ -15,7 +15,7 @@ springboot整合https
 
 ## 第四步启动项目
 
-## 访问验证
+## 第五步访问验证
 * 访问http://ip:1667/https-request/test 会提示需要tls
 * 访问https://ip:1667/https-request/test 会得到返回结果：
 >{

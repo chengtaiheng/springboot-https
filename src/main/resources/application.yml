@@ -1,0 +1,11 @@
+#------------------------------------------------------------------
+#port
+#------------------------------------------------------------------
+server:
+  port: 1667
+  ssl:
+    enabled: true
+    key-alias: "keystore"
+    key-store-password: "cheng123"
+    key-store-type: JKS
+    key-store: "classpath:META-INF/ssl.keystore"

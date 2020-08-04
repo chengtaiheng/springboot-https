@@ -1,5 +1,7 @@
 # springboot-https
 
+# 说明，本项目除了暴露了https端口以外，还额外暴露了一个http端口。
+
 ## 第一步：生成证书
 //生成证书的命令
 > keytool -genkey -alias tomcat -keyalg RSA -keystore /home/gzr/tomcat.keystore 
@@ -13,9 +15,12 @@
 ## 第三步配置springboot的application.yml文件
 参考本项目的配置
 
-## 第四步启动项目
+## 第四步 在本项目的spring.boot.httpsSpringbootHttpCnf类中有配置的http的端口
+为常量 HTTP_PORT，可根据需要更改。
 
-## 第五步访问验证
+## 第五步启动项目
+
+## 第六步访问验证
 * 访问http://ip:1667/https-request/test 会提示需要tls
 * 访问https://ip:1667/https-request/test 会得到返回结果：
 >{

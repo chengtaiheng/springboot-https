@@ -11,6 +11,7 @@ import java.util.Map;
  * @author: 程泰恒
  * @date: 2019/3/27 15:54
  */
+
 @RestController
 @RequestMapping("/https-request/test")
 public class SpringbootHttpsApplicationController {
@@ -19,6 +20,8 @@ public class SpringbootHttpsApplicationController {
     public Map httpsRequest() {
         Map<String, Object> resultMap = new HashMap<String, Object>();
         resultMap.put("result", "请求成功");
+        System.out.println("提交改变");
+
 
         return resultMap;
 
